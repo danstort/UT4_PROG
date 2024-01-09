@@ -4,10 +4,17 @@
  */
 package ArraysAmpliacion;
 
+import java.util.Scanner;
+
 /**
  *
  * @author danielsotoortiz
  */
 public class Ej5 {
     
+    public static void main(String[] args){
+    
+        Scanner tec = new Scanner (System.in);
+        
+    }
 }
