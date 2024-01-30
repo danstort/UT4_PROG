@@ -25,6 +25,7 @@ public class Ej6 {
             System.out.print(v[i]+" ");
 
         }
+        
     }
 
 }
