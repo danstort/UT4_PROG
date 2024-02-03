@@ -16,8 +16,8 @@ public class Ej1 {
 
         Scanner tec = new Scanner(System.in);
 
-        int plus4 = 0;
-        int moins4 = 0;
+        double plus4 = 0;
+        double moins4 = 0;
         int position = 0;
 
         String frase;
@@ -43,8 +43,15 @@ public class Ej1 {
             }
 
         }
-        System.out.println("mayores que 4 " + plus4 + " y " + moins4 + " menos de 4.");
-        
-        
+
+        double mediaPlus;
+        double mediaMoins;
+
+        mediaPlus = (plus4 / (plus4 + moins4)) * 100.0; //Ça variable me donnera la média des mots de 4 lettres ou plus.
+        mediaMoins = (moins4 / (plus4 + moins4)) * 100.0; //Et celle-ci la média de mots de moins de 4 lettres.
+
+        System.out.printf("El porcentaje de palabras con menos de 4 caracteres es: %.2f%%%n", mediaMoins);
+        System.out.printf("El porcentaje de palabras con 4 o mas caracteres es: %.2f%%%n", mediaPlus);
     }
+    
 }
